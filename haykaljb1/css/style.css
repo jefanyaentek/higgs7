@@ -1,0 +1,799 @@
+body {
+    margin: 0px;
+    font-family: arial;
+}
+.appHiggAlexDomino {
+    position: relative;
+	margin: 0px auto;
+	max-width: 400px;
+	height: auto;
+	border: 1px solid #fff;
+    }
+.containeralexhost {
+    background: #6c2534;
+}
+.headeralex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px 10px 5px;
+    background: transparent;
+}
+.kiriheaderalex {
+    background-color: #9d512c;
+    background-image: linear-gradient(
+0deg, #9d512c 0%, #b97c55 100%);
+    color: #fff;
+    padding: 0px 30px 0px 0px;
+    border-radius: 25px 5px 30px 25px;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+.boxidalex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.boxidalex img {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #ffac57;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.boxidname {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.boxidname span {
+    padding: 1px 10px;
+    border: 1px solid #99492f;
+    text-align: center;
+    border-radius: 50px;
+    background: #994932;
+    color: #fedca7;
+}
+#toastid {
+    padding: 1px 10px;
+    border: 1px solid #99492f;
+    text-align: center;
+    border-radius: 50px;
+    background: #994932;
+    color: #fedca7;
+    margin-top: 2px;
+}
+.boxfloatalex {
+    position: fixed;
+    right: 0;
+    top: 5;
+    z-index: 1;
+    display: none;
+}
+.slide-in-right {
+    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+.boxfloatalex img {
+    width: 175;
+    height: 50px;
+    animation: mymove 2s infinite;
+}
+.biasaalex {
+    position: fixed;
+    right: 0;
+    top: 5;
+    z-index: 1;
+    display: none;
+}
+.biasaalex img {
+    width: 175;
+    height: 50px;
+}
+@keyframes mymove {
+  50% {box-shadow: 0px 0px 5px 3px #fed177;}
+}
+.floatdoublealex {
+    position: absolute;
+    z-index: 1;
+}
+.floatdoublealex img {
+    width: 45px;
+    height: auto;
+}
+.floatrankealex {
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 0;
+}
+.floatrankealex img {
+    width: 80px;
+    height: auto;
+}
+.alexslideimg {
+}
+.banneralex img {
+    width: 100%;
+}
+.isialexhost {
+    margin-top: 20px;
+}
+.menualex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menuchange {
+    background-color: #a8602e;
+    background-image: linear-gradient(
+0deg, #a8602e 0%, #d1984e 100%);
+    color: #793211;
+    padding: 6px 30px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 1px 2px #0000006e;
+    clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuactive {
+    background-color: #329b7b;
+    background-image: linear-gradient(
+0deg, #329b7b 0%, #298168 100%);
+    color: #87eed3;
+    padding: 6px 30px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 1px 2px #0000006e;
+    clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+}
+.cont-isialex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+.itemalex {
+    display: inline-grid;
+    background: #ffebc6;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.imgalex {
+    
+}
+.imgalex img {
+    width: 100px;
+    height: 95px;
+}
+.itemalex button {
+    background: url(https://raw.githubusercontent.com/jefanya14/higgs-domino-v7/main/rechnage-btn.png) no-repeat center;
+    background-size: 100%;
+    color: #126d03;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    outline: none;
+}
+.footeralex {
+    background: #481923;
+    color: #f2dd49;
+    font-size: 12px;
+    text-align: center;
+    padding: 30px 20px 10px;
+}
+.imgfooteralex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.imgfooteralex img {
+    width: 35px;
+    margin-right: 10px;
+}
+.trueIDalex {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000008c;
+    z-index: 5;
+}
+.conttrueidalex {
+    margin: 62% auto;
+    background: url(https://raw.githubusercontent.com/jefanya14/higgs-domino-v7/main/WINDOW-2.png) no-repeat center;
+    background-size: 100% 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 55px 0px;
+    text-align: center;
+}
+.formtrueidalex {
+    width: 75%;
+}
+.iteminputid {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+.iteminputid label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #e9c67f;
+    margin-bottom: 2px;
+}
+#trueidalex {
+    width: 100%;
+    background: #8e4925;
+    color: #ffe3bf;
+    border: 1px solid #7c4020;
+    font-size: 18px;
+    line-height: 33px;
+    padding: 0px 10px;
+    border-radius: 15px;
+    outline: none;
+}
+#trueidalex::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #e1b57d;
+}
+#trueidalex::-moz-placeholder { /* Firefox 19+ */
+  color: #e1b57d;
+}
+#trueidalex:-ms-input-placeholder { /* IE 10+ */
+  color: #e1b57d;
+}
+#trueidalex:-moz-placeholder { /* Firefox 18- */
+  color: #e1b57d;
+}
+.conttrueidalex button {
+    background: url(https://static.neptunegame.com/images/website/btn_receive_pup.png) no-repeat center;
+    background-size: 100% 100%;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+}
+.toasterroralex {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000008c;
+    z-index: 5;
+}
+.toasterrorverifalex {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000008c;
+    z-index: 5;
+}
+.conterroralex {
+    margin: 62% auto;
+    background: url(https://sdomino.boxiangyx.com/images/website/webShop/exchange_box.png) no-repeat center;
+    background-size: 100% 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 40px 0px;
+    text-align: center;
+}
+.closeerroralex {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+}
+.closeerroralex img {
+    width: 25px;
+    height: 25px;
+}
+.conterroralex span {
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #26b7b2;
+}
+.conterroralex button {
+    background: url(https://static.neptunegame.com/images/website/btn_receive_pup.png) no-repeat center;
+    background-size: 100% 100%;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 35px;
+}
+.popidalex {
+    background: #0000007a;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.contidalex {
+    top: 50%;
+    right: 50%;
+    margin: 50% auto;
+    background: url(https://sdomino.boxiangyx.com/images/website/webShop/exchange_box.png) no-repeat center;
+    background-size: 100% 100%;
+    width: 80%;
+}
+.closebtnpopid {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.closebtnalex {
+    background: url(https://sdomino.boxiangyx.com/images/website/webShop/colse_exchange.png) no-repeat center;
+    background-size: 100% 100%;
+    width: 25px;
+    height: 25px;
+}
+.ucapanloginidalex {
+    color: #ffb82b;
+    font-size: 20px;
+    font-weight: 600;
+}
+.formidalex {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.formidalex input {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0px 5px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    background: #2da4a4;
+    color: #0c534f;
+}
+.imgrewardalex {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.detailakunpop {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contdetailakun {
+    padding: 0px 30px;
+}
+.itemdetail {
+    background: #095352;
+    color: #2da4a4;
+    padding: 20px 0px;
+    border-radius: 10px;
+}
+.itemdetail p {
+    margin-block-start: 10px;
+    margin-block-end: 5px;
+}
+.itemdetail span {
+    color: #8fd5d5;
+}
+.buttonloginalex {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px 30px 20px;
+}
+.loginfbalexdong {
+    font-size: 23px;
+    background: #4867aa;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #79bfbf;
+}
+.loginpgalexdong {
+    font-size: 23px;
+    background: #118b8b;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #79bfbf;
+}
+.btnloginid {
+    text-align: center;
+}
+.btnloginid button {
+    background: url(https://sdomino.boxiangyx.com/images/website/webShop/exchange_ok.png) no-repeat center;
+    background-size: cover;
+    width: 120px;
+    height: 36px;
+    border: none;
+    margin-bottom: 20px;
+}
+.btnloginid .btntentukan {
+    background: url(https://sdomino.boxiangyx.com/images/website/webInfull/confirm_btn.png) no-repeat center;
+    background-size: cover;
+}
+
+.contpengunjungalex {
+    margin: 50% auto;
+    background: url(https://raw.githubusercontent.com/jefanya14/higgs-domino-v7/main/LOGIN-2.png) no-repeat center;
+    background-size: 100%;
+    padding: 20px;
+    width: 80%;
+}
+.formpengunjungalex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 70px;
+}
+.formpengunjungalex input {
+    font-size: 19px;
+    line-height: 35px;
+    background: #54231a;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: #ffd479;
+    outline: none;
+}
+.formpengunjungalex input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #e1b57d;
+}
+.formpengunjungalex input::-moz-placeholder { /* Firefox 19+ */
+  color: #e1b57d;
+}
+.formpengunjungalex input:-ms-input-placeholder { /* IE 10+ */
+  color: #e1b57d;
+}
+.formpengunjungalex input:-moz-placeholder { /* Firefox 18- */
+  color: #e1b57d;
+}
+.formpengunjungalex button {
+    background: url(https://sdomino.boxiangyx.com/images/website/webShop/exchange_ok.png) no-repeat center;
+    background-size: 100% 100%;
+    width: 96px;
+    height: 32px;
+    border: none;
+    margin-bottom: 23px;
+}
+.closepengunjungalex {
+    position: absolute;
+    right: 26px;
+    top: 38.3%;
+}
+.closinnih {
+    width: 43px;
+    height: 43px;
+}
+.alertpg {
+    font-size: 11px;
+    color: #fff;
+    display: none;
+}
+.rewardalexpop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000c7;
+    z-index: 5;
+}
+.contrewardalex {
+    margin: 38% auto;
+    background-size: 100% 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 40px 0px;
+    text-align: center;
+}
+.imgrewardalex img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 31%;
+    top: 30%;
+    margin: 15% auto;
+    z-index: 20;
+}
+.bgrewardalex {
+    background: url(https://raw.githubusercontent.com/jefanya14/higgs-domino-v7/main/sun-light.png) no-repeat center;
+    background-size: 100% 100%;
+    width: 250px;
+    height: 250px;
+    opacity: 0.1;
+    -webkit-animation: spin 10s linear infinite;
+    -moz-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+}
+.btnrewardalex button {
+    background: url(https://raw.githubusercontent.com/jefanya14/higgs-domino-v7/main/btn-binding-tips.png) no-repeat center;
+    background-size: 100% 100%;
+    width: 105px;
+    height: 35px;
+    border: none;
+    outline: none;
+}
+ .loadingalex {
+     -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
+ }
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+.warnalex {
+    color: #e9c67f;
+    display: none;
+}
+.menuverifalex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 10px;
+}
+.contverifalex {
+    background: url(hilang) no-repeat center;
+    background-size: cover;
+    width: 270px;
+    height: 44px;
+    text-align: center;
+    padding-left: 40px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #5cdfd1;
+}
+.boxformalex2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+}
+.itemalexform {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 90%;
+    margin-bottom: 15px;
+}
+.itemalexform label {
+    color: #fed27e;
+    font-size: 18px;
+}
+.itemalexform input {
+    outline: none;
+    border: 1px solid #701b1b;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-size: 19px;
+    line-height: 35px;
+    background: #994932;
+    color: #f7dc8d;
+}
+.itemalexform input::-webkit-input-placeholder { /* Edge */
+  color: #e1b57d;
+}
+
+.itemalexform input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #e1b57d;
+}
+
+.itemalexform input::placeholder {
+  color: #e1b57d;
+}
+.itemalexform select {
+    outline: none;
+    border: 1px solid #701b1b;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 19px;
+    background: #994932;
+    color: #f7dc8d;
+}
+.tripleform {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.tripleform select {
+    width: 33%;
+    outline: none;
+    border: 1px solid #701b1b;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 19px;
+    background: #994932;
+    color: #f7dc8d;
+    margin-right: 1%;
+}
+.btnverifalex button {
+    background: url(HLANG) no-repeat center;
+    background-size: 100% 100%;
+    width: 117px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+.isisuccessalex {
+    text-align: center;
+    padding: 20px;
+}
+.ucapansucceessalex p {
+    color: #fedca7;
+    font-weight: 600;
+    font-size: 20px;
+}
+.ucapansucceessalex span {
+    display: inline-block;
+    color: #f2d032;
+}
+.verifyloginalex {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #00000045;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 999;
+}
+.contverifalexkeamanan {
+    background: url(https://raw.githubusercontent.com/jefanya14/higgs-domino-v7/main/QUESTION-BOX.png) no-repeat center;
+    background-size: 100% 100%;
+    width: 95%;
+    margin: 50% auto;
+}
+.boxformalex {
+    padding: 30px 22px 15px;
+}
+.itemformalex {
+    margin-bottom: 10px;
+    width: 90%;
+}
+.atasform {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.questalex {
+    margin-right: 5px;
+}
+.questalex img {
+    width: 30px;
+}
+.selectquest {
+    width: 100%;
+}
+.selectquest select {
+    width: 100%;
+    background: #ba88307d;
+    border: none;
+    font-size: 13px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    color: #742f21;
+}
+.bawahform {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.answeralex {
+    margin-right: 5px;
+}
+.answeralex img {
+    width: 30px;
+}
+.inputanswer {
+    width: 100%;
+}
+.inputanswer input {
+    width: 100%;
+    background: #ba8830b0;
+    border: none;
+    font-size: 13px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    color: #621e10;
+}
+.buttonformalex {
+    text-align: center;
+}
+.buttonformalex button {
+    background: url(https://raw.githubusercontent.com/jefanya14/higgs-domino-v7/main/btn-binding-tips.png) no-repeat center;
+    background-size: 100%;
+    width: 100px;
+    height: 40px;
+    border: none;
+}
+.buttonsuccessalex button {
+    background: url(https://raw.githubusercontent.com/jefanya14/higgs-domino-v7/main/btn-binding-tips.png) no-repeat center;
+    background-size: 100% 100%;
+    width: 117px;
+    height: 40px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+}
+@media only screen and (max-width:600px) {
+    .appHiggAlexDomino {
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+		border: none;
+        border-radius: 0px;
+        padding: 0px;
+    }
+}
